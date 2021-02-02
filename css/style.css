@@ -7,6 +7,7 @@ body{
     display: grid;
     background-color: #a8f8be;
     font-family: 'Varta', sans-serif;
+    color: #313131;
     margin: 0;
     padding: 0;
 }
@@ -33,8 +34,13 @@ nav ul li{
     font-weight: 700;
     list-style: none;
 }
-nav ul li a:link{
+nav ul li a:link, nav ul li a:visited{
     color:#c4e6df;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #2f9f8c;
+    text-decoration: underline;
 }
 header{
     background-color: #0f7f6c;
