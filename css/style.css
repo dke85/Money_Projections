@@ -1,16 +1,22 @@
+/* Google Fonts Info
+Raleway for Nav: font-family: 'Raleway', sans-serif;
+EB Garamond for Header: font-family: 'EB Garamond', serif;
+Varta for standard: font-family: 'Varta', sans-serif;
+*/
 body{
     display: grid;
     background-color: #a8f8be;
+    font-family: 'Varta', sans-serif;
     margin: 0;
     padding: 0;
+}
+#logo{
+    width: 12vw;
+    margin:2vw;
+    border-radius: 15%;
 }
 nav,footer{
     background-color: #0e6b5b;
-    margin: 0;
-    padding: 0;
-}
-header{
-    background-color: #0f7f6c;
     margin: 0;
     padding: 0;
 }
@@ -18,20 +24,41 @@ nav ul{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 10vw 0 0;
+    padding: 0;
+    place-items: center center;
+}
+nav ul li{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    list-style: none;
+}
+nav ul li a:link{
+    color:#c4e6df;
+}
+header{
+    background-color: #0f7f6c;
+    font-family: 'EB Garamond', serif;
+    color: #c4e6df;
     margin: 0;
     padding: 0;
 }
-nav ul li{
-}
 header h1{
+    letter-spacing: 0.3rem;
+    font-weight: 900;
     display: grid;
     margin: 0;
     padding: 10px 0;
     place-items: center center;
 }
-
-#logo{
-    width: 12vw;
-    margin:2vw;
-    border-radius: 15%;
+article{
+    margin: 0 7.5vw;
+}
+article p{
+    letter-spacing: 0.05rem;
+}
+footer{
+    font-size: 0.75rem;
+    color: #c4e6df;
+    text-align: center;
 }
