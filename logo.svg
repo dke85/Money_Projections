@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2">
+    <rect
+       x="30.994047"
+       y="24.946428"
+       width="32.505951"
+       height="11.339286"
+       id="rect34" />
+    <rect
+       x="10.583333"
+       y="10.583333"
+       width="68.777283"
+       height="72.289772"
+       id="rect28" />
+    <rect
+       x="24.946428"
+       y="30.238094"
+       width="0"
+       height="25.702381"
+       id="rect22" />
+    <rect
+       x="16.630953"
+       y="15.119048"
+       width="38.55357"
+       height="46.869049"
+       id="rect12" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-40.357697,-37.150467)">
+    <text
+       xml:space="preserve"
+       id="text10"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect12);fill:#000000;fill-opacity:1;stroke:none;" />
+    <text
+       xml:space="preserve"
+       id="text20"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect22);fill:#000000;fill-opacity:1;stroke:none;" />
+    <text
+       xml:space="preserve"
+       id="text32"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect34);fill:#000000;fill-opacity:1;stroke:none;" />
+    <rect
+       style="fill:#008080;stroke-width:0.264583"
+       id="rect42"
+       width="100"
+       height="100"
+       x="40.357697"
+       y="37.150467" />
+  </g>
+  <g
+     id="layer2"
+     style="display:inline"
+     transform="translate(-40.357697,-37.150467)">
+    <text
+       xml:space="preserve"
+       id="text26"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;line-height:1.25;font-family:'the King &amp; Queen font';-inkscape-font-specification:'the King &amp; Queen font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect28);display:inline;fill:#e3dbdb;fill-opacity:1;stroke:none;"
+       transform="matrix(1.1949417,0,0,1.1949417,35.293812,29.113381)"><tspan
+         x="10.583984"
+         y="33.463146"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:'the King &amp; Queen font';-inkscape-font-specification:'the King &amp; Queen font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">
+</tspan></tspan><tspan
+         x="10.583984"
+         y="65.213146"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:'the King &amp; Queen font';-inkscape-font-specification:'the King &amp; Queen font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">M</tspan></tspan></text>
+  </g>
+</svg>

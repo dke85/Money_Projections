@@ -1,6 +1,37 @@
 body{
+    display: grid;
     background-color: #a8f8be;
+    margin: 0;
+    padding: 0;
 }
-header,footer{
+nav,footer{
+    background-color: #0e6b5b;
+    margin: 0;
+    padding: 0;
+}
+header{
     background-color: #0f7f6c;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+}
+header h1{
+    display: grid;
+    margin: 0;
+    padding: 10px 0;
+    place-items: center center;
+}
+
+#logo{
+    width: 12vw;
+    margin:2vw;
+    border-radius: 15%;
 }
