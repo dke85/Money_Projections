@@ -4,18 +4,16 @@ EB Garamond for Header: font-family: 'EB Garamond', serif;
 Varta for standard: font-family: 'Varta', sans-serif;
 */
 
+/*---- Global/Body ----*/
 body{
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: [nav-start] 10vh [nav-end head-start] 15vh [head-end main-start] 65vh [main-end footer-start] 10vh [footer-end];
     background-color: #a8f8be;
     font-family: 'Varta', sans-serif;
     color: #313131;
     margin: 0;
     padding: 0;
-}
-#logo{
-    width: 12vw;
-    margin:2vw;
-    border-radius: 15%;
 }
 
 /*---- Multi/DRY ----*/
@@ -26,6 +24,9 @@ nav,footer{
 }
 
 /*---- Nav ----*/
+nav{
+    grid-area: nav-start / 1 / nav-end / 6;
+}
 nav ul{
     display:flex;
     flex-direction: row;
@@ -47,9 +48,18 @@ nav ul li a:hover{
     color: #2f9f8c;
     text-decoration: underline;
 }
+#logo{
+    width: 12vw;
+    margin:2vw;
+    border-radius: 15%;
+    max-width: 50px;
+}
 
 /*---- Header ----*/
 header{
+    grid-area: head-start / 1 / head-end / 6;
+    display: flex;
+    justify-content: space-around;
     background-color: #0f7f6c;
     font-family: 'EB Garamond', serif;
     color: #c4e6df;
@@ -57,12 +67,17 @@ header{
     padding: 0;
 }
 header h1{
+    align-self: center;
     letter-spacing: 0.3rem;
     font-weight: 900;
-    display: grid;
     margin: 0;
-    padding: 10px 0;
-    place-items: center center;
+    text-align: center;
+}
+
+/*---- Main ----*/
+main{
+    grid-area: main-start / 1 / main-end / 6;
+    overflow-y: scroll;
 }
 
 /*---- Articles/Sections ----*/
@@ -75,6 +90,7 @@ article p{
 
 /*---- Footer ----*/
 footer{
+    grid-area: footer-start / 1 / footer-end / 6;
     font-size: 0.75rem;
     color: #c4e6df;
     text-align: center;
