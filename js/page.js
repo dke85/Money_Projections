@@ -3,7 +3,7 @@
 
 //Functions
 function createLayout(){
-    let combo = document.getElementById('netCalc').options.item[this.selectedOption].getAttribute('layout');
+    let combo = document.getElementById('netCalc').options[netCalc.selectedIndex].getAttribute('layout');
 
     console.log(combo);
 };

@@ -31,7 +31,7 @@
                 <p>Pick a calculator to determine pay</p>
                 <form>
                     <label for="netCalc">Calculator:</label>
-                    <select id="netCalc">
+                    <select id="netCalc" onChange="return createLayout()">
                         <option layout=0 value="null">&nbsp;</option>
                         <option layout=1 value="deducted">Deducted</option>
                         <option layout=2 value="netpay">Net Pay</option>
