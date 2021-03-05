@@ -98,6 +98,14 @@ footer{
     text-align: center;
 }
 
+/*---- Forms ----*/
+#deducted{
+    display:none;
+}
+#deducted textarea{
+    resize: none;  
+}
+
 @media screen and (min-width: 376px){
     /* To fill in later*/
 }

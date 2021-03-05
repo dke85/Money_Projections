@@ -38,11 +38,22 @@
                         <option layout=3 value="estimate">Estimated Pay</option>
                     </select>
                 </form>
+
+                <form id="deducted">
+                    <label for="deductedGross">Gross Income:</label>
+                    <input id="deductedGross" type="number"><br>
+                    <label for="deductedNet">Net Income:</label>
+                    <input id="deductedNet" type="number"><br>
+                    <label for="deductedCalc">Deducted:</label>
+                    <textarea readonly id="deductedCalc" rows="1"></textarea><br>
+                    <button name="deducted" type="button" onclick=deductedCalc()>Calculate</button>
+                </form>
             </article>
         </main>
     <footer>
         <p>Site copyright &copy Dennis Elmore 2021</p>
     </footer>
+    <script src="js/calculation.js"></script>
     <script src="js/page.js"></script>
 </body>
 
