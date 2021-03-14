@@ -101,9 +101,15 @@ footer{
 /*---- Forms ----*/
 #deducted{
     display:none;
+    flex-direction: column;
 }
 #deducted textarea{
     resize: none;  
+}
+
+#deductedCalc{
+    background-color: rgba(255,255,255,0.5);
+    border-style: none;
 }
 
 @media screen and (min-width: 376px){
