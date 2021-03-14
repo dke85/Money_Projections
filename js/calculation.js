@@ -1,3 +1,3 @@
-function deductedCalc(){
+function deductedCalcJS(){
     console.log('got here');
 }
