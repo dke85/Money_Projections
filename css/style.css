@@ -99,18 +99,19 @@ footer{
 }
 
 /*---- Forms ----*/
-#deducted, #netPay{
+#deducted, #netPay, #grossPay{
     display:none;
     flex-direction: column;
 }
 #deducted textarea, #deducted input, 
-#netPay textarea, #netPay input{
+#netPay textarea, #netPay input,
+#grossPay textarea, #grossPay input{
     height: 5vh;
     font-size: 4vh;
     resize: none;  
 }
 
-#deductedCalc, #netPayCalc{
+#deductedCalc, #netPayCalc, #grossPayCalc{
     background-color: rgba(255,255,255,0.5);
     border-style: none;
 }

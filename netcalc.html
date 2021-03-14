@@ -35,7 +35,8 @@
                         <option layout=0 value="null">&nbsp;</option>
                         <option layout=1 value="deducted">Deducted</option>
                         <option layout=2 value="netPay">Net Pay</option>
-                        <option layout=3 value="estimate">Estimated Pay</option>
+                        <option layout=3 value="grossPay">Gross Pay</option>
+                        <option layout=4 value="estimate">Estimated Pay</option>
                     </select>
                 </form>
 
@@ -56,6 +57,15 @@
                     <button name="netPay" type="button" onclick="netPayCalcJS()">Calculate</button><br>
                     <label for="netPayCalc">Net Pay:</label>
                     <textarea readonly id="netPayCalc" rows="1"></textarea><br>
+                </form>
+                <form id="grossPay">
+                    <label for="hourlyRate">Pay Per Hour:</label>
+                    <input id="hourlyRate" type="number"><br>
+                    <label for="hoursWorked">Hours Worked:</label>
+                    <input id="hoursWorked" type="number"><br>
+                    <button name="grossPay" type="button" onclick="grossPayCalcJS()">Calculate</button><br>
+                    <label for="grossPayCalc">Gross Pay:</label>
+                    <textarea readonly id="grossPayCalc" rows="1"></textarea><br>
                 </form>
             </article>
         </main>

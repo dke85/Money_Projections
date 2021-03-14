@@ -12,6 +12,13 @@ function calcNetPay(){
     return c;
 }
 
+function calcGrossPay(){
+    let a = document.getElementById("hourlyRate").value;
+    let b = document.getElementById("hoursWorked").value;
+    let c = a*b;
+    return c;
+}
+
 function deductedCalcJS(){
     document.getElementById("deductedCalc").value = calcDeducted();
 }
@@ -19,4 +26,8 @@ function deductedCalcJS(){
 
 function netPayCalcJS(){
     document.getElementById("netPayCalc").value = calcNetPay();
+}
+
+function grossPayCalcJS(){
+    document.getElementById("grossPayCalc").value = calcGrossPay();
 }
