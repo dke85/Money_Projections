@@ -34,7 +34,7 @@
                     <select id="netCalc" onChange="return createLayout()">
                         <option layout=0 value="null">&nbsp;</option>
                         <option layout=1 value="deducted">Deducted</option>
-                        <option layout=2 value="netpay">Net Pay</option>
+                        <option layout=2 value="netPay">Net Pay</option>
                         <option layout=3 value="estimate">Estimated Pay</option>
                     </select>
                 </form>
@@ -47,6 +47,15 @@
                     <button name="deducted" type="button" onclick="deductedCalcJS()">Calculate</button><br>
                     <label for="deductedCalc">Deducted:</label>
                     <textarea readonly id="deductedCalc" rows="1"></textarea><br>
+                </form>
+                <form id="netPay">
+                    <label for="netPayGross">Gross Income:</label>
+                    <input id="netPayGross" type="number"><br>
+                    <label for="netPayDeducted">Income Deduction:</label>
+                    <input id="netPayDeducted" type="number"><br>
+                    <button name="netPay" type="button" onclick="netPayCalcJS()">Calculate</button><br>
+                    <label for="netPayCalc">Net Pay:</label>
+                    <textarea readonly id="netPayCalc" rows="1"></textarea><br>
                 </form>
             </article>
         </main>
