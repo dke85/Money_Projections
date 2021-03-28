@@ -14,64 +14,66 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html"><img id="logo" src="logo.svg" alt="logo"></a></li>
-            <li><a href="netcalc.html">Net Calc</a></li>
-            <li><a href="projections.html">Projections</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Money Projections</h1>
-    </header>
-        <main>
-            <article>
-                <h2>Net Pay Calculator</h2>
-                <p>Pick a calculator to determine pay</p>
-                <form>
-                    <label for="netCalc">Calculator:</label>
-                    <select id="netCalc" onChange="return createLayout()">
-                        <option layout=0 value="null">&nbsp;</option>
-                        <option layout=1 value="deducted">Deducted</option>
-                        <option layout=2 value="netPay">Net Pay</option>
-                        <option layout=3 value="grossPay">Gross Pay</option>
-                        <option layout=4 value="estimate">Estimated Pay</option>
-                    </select>
-                </form>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="index.html"><img id="logo" src="logo.svg" alt="logo"></a></li>
+                <li><a href="netcalc.html">Net Calc</a></li>
+                <li><a href="projections.html">Projections</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Money Projections</h1>
+        </header>
+            <main>
+                <article>
+                    <h2>Net Pay Calculator</h2>
+                    <p>Pick a calculator to determine pay</p>
+                    <form>
+                        <label for="netCalc">Calculator:</label>
+                        <select id="netCalc" onChange="return createLayout()">
+                            <option layout=0 value="null">&nbsp;</option>
+                            <option layout=1 value="deducted">Deducted</option>
+                            <option layout=2 value="netPay">Net Pay</option>
+                            <option layout=3 value="grossPay">Gross Pay</option>
+                            <option layout=4 value="estimate">Estimated Pay</option>
+                        </select>
+                    </form>
 
-                <form id="deducted">
-                    <label for="deductedGross">Gross Income:</label>
-                    <input id="deductedGross" type="number"><br>
-                    <label for="deductedNet">Net Income:</label>
-                    <input id="deductedNet" type="number"><br>
-                    <button name="deducted" type="button" onclick="deductedCalcJS()">Calculate</button><br>
-                    <label for="deductedCalc">Deducted:</label>
-                    <textarea readonly id="deductedCalc" rows="1"></textarea><br>
-                </form>
-                <form id="netPay">
-                    <label for="netPayGross">Gross Income:</label>
-                    <input id="netPayGross" type="number"><br>
-                    <label for="netPayDeducted">Income Deduction:</label>
-                    <input id="netPayDeducted" type="number"><br>
-                    <button name="netPay" type="button" onclick="netPayCalcJS()">Calculate</button><br>
-                    <label for="netPayCalc">Net Pay:</label>
-                    <textarea readonly id="netPayCalc" rows="1"></textarea><br>
-                </form>
-                <form id="grossPay">
-                    <label for="hourlyRate">Pay Per Hour:</label>
-                    <input id="hourlyRate" type="number"><br>
-                    <label for="hoursWorked">Hours Worked:</label>
-                    <input id="hoursWorked" type="number"><br>
-                    <button name="grossPay" type="button" onclick="grossPayCalcJS()">Calculate</button><br>
-                    <label for="grossPayCalc">Gross Pay:</label>
-                    <textarea readonly id="grossPayCalc" rows="1"></textarea><br>
-                </form>
-            </article>
-        </main>
-    <footer>
-        <p>Site copyright &copy Dennis Elmore 2021</p>
-    </footer>
+                    <form id="deducted">
+                        <label for="deductedGross">Gross Income:</label>
+                        <input id="deductedGross" type="number"><br>
+                        <label for="deductedNet">Net Income:</label>
+                        <input id="deductedNet" type="number"><br>
+                        <button name="deducted" type="button" onclick="deductedCalcJS()">Calculate</button><br>
+                        <label for="deductedCalc">Deducted:</label>
+                        <textarea readonly id="deductedCalc" rows="1"></textarea><br>
+                    </form>
+                    <form id="netPay">
+                        <label for="netPayGross">Gross Income:</label>
+                        <input id="netPayGross" type="number"><br>
+                        <label for="netPayDeducted">Income Deduction:</label>
+                        <input id="netPayDeducted" type="number"><br>
+                        <button name="netPay" type="button" onclick="netPayCalcJS()">Calculate</button><br>
+                        <label for="netPayCalc">Net Pay:</label>
+                        <textarea readonly id="netPayCalc" rows="1"></textarea><br>
+                    </form>
+                    <form id="grossPay">
+                        <label for="hourlyRate">Pay Per Hour:</label>
+                        <input id="hourlyRate" type="number"><br>
+                        <label for="hoursWorked">Hours Worked:</label>
+                        <input id="hoursWorked" type="number"><br>
+                        <button name="grossPay" type="button" onclick="grossPayCalcJS()">Calculate</button><br>
+                        <label for="grossPayCalc">Gross Pay:</label>
+                        <textarea readonly id="grossPayCalc" rows="1"></textarea><br>
+                    </form>
+                </article>
+            </main>
+        <footer>
+            <p>Site copyright &copy Dennis Elmore 2021</p>
+        </footer>
+    </div>
     <script src="js/calculation.js"></script>
     <script src="js/page.js"></script>
 </body>

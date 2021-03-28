@@ -6,9 +6,6 @@ Varta for standard: font-family: 'Varta', sans-serif;
 
 /*---- Global/Body ----*/
 body{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: [nav-start] 10vh [nav-end head-start] 15vh [head-end main-start] 65vh [main-end footer-start] 10vh [footer-end];
     background-color: #a8f8be;
     font-family: 'Varta', sans-serif;
     color: #313131;
@@ -25,7 +22,7 @@ nav,footer{
 
 /*---- Nav ----*/
 nav{
-    grid-area: nav-start / 1 / nav-end / 6;
+    grid-area: nav;
 }
 nav ul{
     display:flex;
@@ -50,14 +47,14 @@ nav ul li a:hover{
 }
 #logo{
     width: 12vw;
-    margin:2vw;
+    margin: clamp(7.5px, 2vw, 21.5px);
     border-radius: 15%;
     max-width: 50px;
 }
 
 /*---- Header ----*/
 header{
-    grid-area: head-start / 1 / head-end / 6;
+    grid-area: header;
     display: flex;
     justify-content: space-around;
     background-color: #0f7f6c;
@@ -74,25 +71,38 @@ header h1{
     font-weight: 900;
     margin: 0;
     text-align: center;
+    font-size: 7vw;
 }
 
 /*---- Main ----*/
 main{
-    grid-area: main-start / 1 / main-end / 6;
+    grid-area: main;
     overflow-y: scroll;
+}
+main::-webkit-scrollbar{
+    display: hidden;
 }
 
 /*---- Articles/Sections ----*/
-article{
+article, aside{
     margin: 0 7.5vw;
 }
-article p{
+article p, aside p{
     letter-spacing: 0.05rem;
+}
+article #intro{
+    grid-area: intro;
+}
+article #description{
+    grid-area: description;
+}
+aside{
+    grid-area: aside;
 }
 
 /*---- Footer ----*/
 footer{
-    grid-area: footer-start / 1 / footer-end / 6;
+    grid-area: footer;
     font-size: 0.75rem;
     color: #c4e6df;
     text-align: center;
@@ -116,10 +126,63 @@ footer{
     border-style: none;
 }
 
-@media screen and (min-width: 376px){
-    /* To fill in later*/
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 75px 100px auto 50px;
+    height: 100vh;
+}
+
+@media screen and (min-width: 768px){
+    .wrapper{
+        grid-template:
+        "nav header" 100px
+        "nav main" auto
+        "footer footer" 50px / 100px
+    }
+    nav ul{
+        flex-direction: column;
+        margin: 0;
+        border-style: none dashed dashed none;
+        height: 99%;
+        color:#c4e6df;
+    }
+    header{
+        border-style: none;
+        border-radius: 0;
+    }
+    nav ul li{
+        height: 20vh;
+    }
+
 }
 
 @media screen and (min-width: 1281px){
-    /* To fill in later*/
+    main{
+        display: grid;
+        grid-template:
+        "intro aside" auto
+        "description aside" auto / 2fr 1fr
+        ;
+    }
+    .wrapper{   
+        grid-template-rows: 140px auto 50px;
+    }
+    aside{
+        justify-content: center;
+        margin: 0;
+        padding: 25px 50px;
+    }
+    article{
+        border-right: dashed #313131;
+        margin: 0;
+        padding: 25px 50px;
+    }
+    header h1{
+        font-size: 10vh;
+    }
 }
