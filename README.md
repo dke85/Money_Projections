@@ -12,10 +12,10 @@ Below are the features picked from a list to be displayed for
 demonstrating understanding of the basics of front end developement
 utilizing a mobile first approach.
 
-##CSS Feature
+##CSS Feature##
 * __CSS Grid and Flexbox__ to organize content.
 
-##Javascript Features
+##Javascript Features##
 *__Create a form__ validate at least one field and use that 
 information on your page.
 *__Create a Function__ that performs some form of math and 
@@ -25,13 +25,13 @@ display that somewhere on your page.
 *__Show/hide 1+ content areas__ or elements on your site 
 through clicking a button or other user interaction.
 
-##Media Queries
+##Media Queries##
 Two break points are utilized to improve the site usability 
 for tablets and desktops with mobile size as a base. 
 
-Tablet size was based on most popular portrait resolution 
+_Tablet size was based on most popular portrait resolution 
 and covers 4 of the top 5 (the one not covered is on the 
-list twice and landscape works).
+list twice and landscape works)._
 
 _Laptop size goes from the largest resolution out of tablets, 
 which is also the lowest of the most popular resolutions._
