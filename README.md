@@ -37,5 +37,5 @@ _Laptop size goes from the largest resolution out of tablets,
 which is also the lowest of the most popular resolutions._
 
 * [x] Break point for tablet is __768px__.
-* [x] Break point for desktop is __1281__.
+* [x] Break point for desktop is __1281px__.
 
