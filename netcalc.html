@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="index.html"><img id="logo" src="logo.svg" alt="logo"></a></li>
                 <li><a href="netcalc.html">Net Calc</a></li>
-                <li><a href="projections.html">Projections</a></li>
+                <!-- <li><a href="projections.html">Projections</a></li> -->
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
@@ -27,7 +27,7 @@
             <h1>Money Projections</h1>
         </header>
             <main>
-                <article>
+                <article id="net">
                     <h2>Net Pay Calculator</h2>
                     <p>Pick a calculator to determine pay</p>
                     <form>
@@ -42,6 +42,8 @@
                     </form>
 
                     <form id="deducted">
+                        <!-- This could be cool to improved with giving percent and amount -->
+                        <p>This calculator is designed to estimate how much is deducted by taking your gross income and subtracting your net income.</p>
                         <label for="deductedGross">Gross Income:</label>
                         <input id="deductedGross" type="number"><br>
                         <label for="deductedNet">Net Income:</label>
@@ -51,6 +53,7 @@
                         <textarea readonly id="deductedCalc" rows="1"></textarea><br>
                     </form>
                     <form id="netPay">
+                        <p>Thid calculator is designed to figure out what your net pay is by subtracting how much was deducted from your gross pay.</p>
                         <label for="netPayGross">Gross Income:</label>
                         <input id="netPayGross" type="number"><br>
                         <label for="netPayDeducted">Income Deduction:</label>
@@ -60,6 +63,8 @@
                         <textarea readonly id="netPayCalc" rows="1"></textarea><br>
                     </form>
                     <form id="grossPay">
+                        <!-- This could be improved with overtime or holiday pay add-ins -->
+                        <p>This calculator is designed to figure out your gross pay by multiplying an hourly rate by number of hours worked.</p>
                         <label for="hourlyRate">Pay Per Hour:</label>
                         <input id="hourlyRate" type="number"><br>
                         <label for="hoursWorked">Hours Worked:</label>
@@ -67,6 +72,17 @@
                         <button name="grossPay" type="button" onclick="grossPayCalcJS()">Calculate</button><br>
                         <label for="grossPayCalc">Gross Pay:</label>
                         <textarea readonly id="grossPayCalc" rows="1"></textarea><br>
+                    </form>
+                    <form id="estimatedPay">
+                        <!-- This functions the same as Net Pay. May improve later -->
+                        <p>This calculator is designed to estimate how much you will get paid based on taking a gross income and subtracting your deducted ammount</p>
+                        <label for="estGrossPay">Gross Income:</label>
+                        <input id="estGrossPay" type="number"><br>
+                        <label for="estimatedDeducted">Amount Deducted:</label>
+                        <input id="estimatedDeducted" type="number"><br>
+                        <button name="estimatedPay" type="button" onclick="estimatedPayCalcJS()">Calculate</button><br>
+                        <label for="estimatedPayCalc">Estimated Pay:</label>
+                        <textarea readonly id="estimatedPayCalc" rows="1"></textarea><br>
                     </form>
                 </article>
             </main>

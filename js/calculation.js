@@ -19,6 +19,13 @@ function calcGrossPay(){
     return c;
 }
 
+function calcEstimatedPay(){
+    let a = document.getElementById("estGrossPay").value;
+    let b = document.getElementById("estimatedDeducted").value;
+    let c = a-b;
+    return c;
+}
+
 function deductedCalcJS(){
     document.getElementById("deductedCalc").value = calcDeducted();
 }
@@ -30,4 +37,8 @@ function netPayCalcJS(){
 
 function grossPayCalcJS(){
     document.getElementById("grossPayCalc").value = calcGrossPay();
+}
+
+function estimatedPayCalcJS(){
+    document.getElementById("estimatedPayCalc").value = calcEstimatedPay();
 }

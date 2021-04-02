@@ -7,25 +7,36 @@ function createLayout(){
     if (combo == 1){
         netPay.style.display = "none";
         grossPay.style.display = "none";
+        estimatedPay.style.display = "none";
         deducted.style.display = "flex";
 
     }
     else if (combo == 2){
         deducted.style.display = "none";
         grossPay.style.display = "none";
+        estimatedPay.style.display = "none";
         netPay.style.display = "flex";
 
     }
     else if (combo == 3){
         deducted.style.display = "none";
         netPay.style.display = "none";
+        estimatedPay.style.display = "none";
         grossPay.style.display = "flex";
+
+    }
+    else if (combo == 4){
+        deducted.style.display = "none";
+        netPay.style.display = "none";
+        grossPay.style.display = "none";
+        estimatedPay.style.display = "flex";
 
     }
     else{
         deducted.style.display = "none";
         netPay.style.display = "none";
         grossPay.style.display = "none";
+        estimatedPay.style.display = "none";
     }
 }
 
